@@ -1,47 +1,21 @@
-# couture‑sketch‑designer‑skill‑v2
+# couture‑sketch‑designer‑skill
 AI Skill for high‑fashion hand‑drawn couture sketch generation (V2).
 
-将任意灵感物体(object)抽象转化为服装，输出设计师铅笔彩稿文本描述，可直接对接文生图模型(Midjourney / Stable Diffusion)。
+Transform any source‑object into abstract fashion designs. Output designer‑style pencil‑colored sketch text descriptions, ready for text‑to‑image models (Midjourney / Stable Diffusion).
 
-## ✨ V2 更新亮点
-1. 廓形完全放开：不限于收腰礼服，支持西装、短裙、解构、轻休闲、实验感有趣廓形。
-2. 拒绝廉价具象挪用：禁止直接印动物头像、外挂实体尾巴/肢体；只提取色彩、块面、肌理、节奏做抽象服装设计语言。
-3. 强制设计变量：每套方案明确定义：袖子、披肩、珠宝装饰、头饰。
-4. 画面小样强规则：
-   - 四周仅允许两类素材：①灵感object极简速写溯源；②**模特身上实际存在**的裁剪、缝纫、面料、扣子、刺绣、配饰细节。
-   - 禁止未使用的构思、废弃结构、无关装饰。
-5. 手绘风格：铅笔彩铅，保留淡淡的比例草稿线，浅棕黄怀旧画纸底色。
-6. 参考 McQueen实验结构、Dior手工工艺，可开启微妙科技感。
+![Couture Sketch Preview](./assets/preview_main.png)
+*Example render: final couture sketch output. Vintage yellowed paper, natural pencil strokes, reference call‑out panels arranged around the central model.*
 
-## 🚀 使用方法
-把 `skill_definition_v2.md` 的全部内容作为系统提示词输入大模型。
+## Key Features
+1. **Open silhouette freedom**: Not limited to fitted evening gowns. Supports tailored suits, mini‑skirts, deconstructed shapes, casual‑luxury and experimental eye‑catching silhouettes.
+2. **No cheap literal copying**: Forbid printing animal faces, gluing real‑world appendages onto clothing. Extract color blocking, texture, rhythm and material contrast as abstract fashion design language.
+3. **Mandatory design variables**: Every proposal explicitly defines: sleeves, shawls, jewelry embellishments, headpieces.
+4. **Strict margin panel rules**:
+    - Only two categories are allowed for surrounding sketch panels:
+      ① Minimal pencil sketch of the original inspiration object (source reference).
+      ② Construction details **actually implemented on the garment**: fabric swatches, pattern pieces, stitching lines, decorative buttons, embroidery samples, accessory components.
+    - Unused drafts, abandoned structures, irrelevant decorative elements must not appear.
+5. **Consistent hand‑drawn aesthetic**: Pencil + colored‑pencil texture, faint unfinished proportion construction lines, subtle yellowed vintage paper background.
+6. **Design references**: Alexander McQueen experimental construction, Dior haute couture hand‑atelier craftsmanship. Optional subtle tech‑infused material treatment (no garish cyber‑neon effects).
 
-输入指令示例：
-- `浣熊`
-- `黑曜石玫瑰`
-- `随机`
-- `随机，增加微妙科技感`
-
-### 三步工作流
-1. **Step1 灵感拆解**
-提取object的色彩、肌理、块面节奏，抽象转化为服装语言；输出面料、工艺、廓形、配饰可能性。
-
-2. **Step2 输出4套差异化方案**
-每套包含模特、姿态、廓形、袖子/披肩/珠宝/头饰、工艺细节。
-等待用户选择方案编号。
-
-3. **Step3 输出最终完整手绘稿**
-模特居中随机姿态；四周放置灵感溯源速写 + 成衣真实工艺小样；不出现任何这套衣服没有用到的元素。
-
-## 📌硬性约束
-1. 不生成真实名人肖像，只用时装周超模气质。
-2. 所有四周小样必须溯源本套设计，禁止无关元素。
-3. 设计必须尊重真实面料、缝纫、拼接工艺。
-4. 科技感只做材质/内衬嵌入，拒绝廉价赛博霓虹。
-
-## 📂示例
-- `example_raccoon.md`：浣熊完整运行样例输出
-
-## License
-MIT
-# customized_dress_design_skills
+## 📁 Repository Structure
